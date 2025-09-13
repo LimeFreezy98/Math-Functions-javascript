@@ -6,7 +6,10 @@
     <body>
         <!-- area of circle -->
         <h2>Area of circle</h2>
-        <button>Calculate area</button>
+        <input type="number" id="radiusInput" placeholder="Enter radius">
+        <button onclick="alert('Area: ' + areaOfCircle(Number(document.getElementById('radiusInput').value)))">
+            Calculate Area
+        </button>
            
 
 
