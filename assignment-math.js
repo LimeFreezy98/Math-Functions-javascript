@@ -23,3 +23,9 @@ document.getElementById("passwordBtn").addEventListener("click", () => {
     const password = generatePassword(10); // 10-character password
     document.getElementById("passwordOutput").textContent = "Generated Password: " + password;
 });
+
+
+ //  sale tax calculator 
+ function salesTaxCalculator(price, taxRate) {
+    return "$" + (price + (price * taxRate)).toFixed(2);
+}

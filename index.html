@@ -20,7 +20,11 @@
 
         <!-- sales tax calculator -->
         <h2> Sales tax calculator</h2>
-         <button> Calculate Total</button>
+        <input type="number" id="priceInput" placeholder="Enter price">
+        <input type="number" id="taxInput" placeholder="Enter tax rate (e.g. 0.07)">
+        <button onclick="alert('Total Price: ' + salesTaxCalculator(Number(document.getElementById('priceInput')
+        .value), Number(document.getElementById('taxInput').value)))">
+             Calculate Total</button>
 
 
      <script src="assignment-math.js"></script>
